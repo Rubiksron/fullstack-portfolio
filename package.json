@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-portfolio",
+  "version": "1.0.0",
+  "description": "fullstack app built with webpack, react, Node.js, and express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rubiksron/fullstack-portfolio.git"
+  },
+  "keywords": [
+    "react.js"
+  ],
+  "author": "Ron Dunphy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rubiksron/fullstack-portfolio/issues"
+  },
+  "homepage": "https://github.com/Rubiksron/fullstack-portfolio#readme"
+}
