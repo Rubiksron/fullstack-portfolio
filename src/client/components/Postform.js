@@ -10,11 +10,10 @@ class PostForm extends Component {
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
-
-  };
+  }
 
   onChange(e) {
-    this.setState({[e.target.name]: e.target.value });
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   onSubmit(e) {
@@ -33,11 +32,11 @@ class PostForm extends Component {
       body: JSON.stringify(post)
     })
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => console.log(data));
   }
 
   render() {
-    return(
+    return (
       <div>
         <h1>Add Post</h1>
         <form onSubmit={this.onSubmit}>
@@ -52,7 +51,7 @@ class PostForm extends Component {
           <button type="submit">Submit</button>
         </form>
       </div>
-    )
+    );
   }
 }
 
