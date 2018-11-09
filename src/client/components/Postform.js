@@ -12,8 +12,12 @@ class PostForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
+  onChangeInput(e) {
+    this.setState({ title: e.target.value });
+  }
+
+  onChangeTextarea(e) {
+    this.setState({ body: e.target.value });
   }
 
   onSubmit(e) {
@@ -41,12 +45,14 @@ class PostForm extends Component {
         <h1>Add Post</h1>
         <form onSubmit={this.onSubmit}>
           <div>
-            <label>Title:</label><br />
-            <input type="text" name="title" onChange={this.onChange} value={this.state.title}/>
+            <label>Title:</label>
+            <br />
+            <input type="text" name="title" onChange={this.onChangeInput} value={this.state.title} />
           </div>
           <div>
-            <label>Body:</label><br />
-            <textarea type="text" name="body" onChange={this.onChange} value={this.state.body}/>
+            <label>Body:</label>
+            <br />
+            <textarea type="text" name="body" onChange={this.onChangeTextarea} value={this.state.body} />
           </div>
           <button type="submit">Submit</button>
         </form>
