@@ -26,7 +26,7 @@ class PostForm extends Component {
     const post = {
       title: this.state.title,
       body: this.state.body
-    }
+    };
 
     fetch('https://jsonplaceholder.typicode.com/posts', {
       method: 'POST',

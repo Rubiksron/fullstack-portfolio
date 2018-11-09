@@ -4,5 +4,24 @@ h1 {
 
 body {
   width: 90%;
-  margin: auto;
+  text-align: center;
+  background: beige;
+}
+
+ol:nth-child(odd) {
+    background-color: tan;
+}
+
+#pokemonContainer {
+  border-radius: .75em;
+  height: 25em;
+  border: solid black .25em;
+  overflow: scroll;
+}
+
+#jsonContainer {
+  border-radius: .75em;
+  height: 25em;
+  border: solid black .25em;
+  overflow: scroll;
 }
