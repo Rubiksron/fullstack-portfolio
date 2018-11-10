@@ -16,10 +16,10 @@ componentWillMount() {
 
   render() {
     const postItems = this.state.posts.map(post => (
-      <div key={post.id}>
+      <ol key={post.id}>
         <h3>{post.title} - {post.id}</h3>
         <p>{post.body}</p>
-      </div>
+      </ol>
     ));
     return (
       <div>
