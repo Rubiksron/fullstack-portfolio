@@ -1,15 +1,14 @@
 h1 {
-  color: green;
+  color: whitesmoke;
 }
-
 body {
   width: 90%;
   text-align: center;
-  background: beige;
+  background: black;
 }
 
 ol:nth-child(odd) {
-    background-color: tan;
+    background-color: lavender;
 }
 
 #pokemonContainer {
@@ -17,6 +16,7 @@ ol:nth-child(odd) {
   height: 25em;
   border: solid black .25em;
   overflow: scroll;
+  background: lightgrey;
 }
 
 #jsonContainer {
@@ -24,4 +24,5 @@ ol:nth-child(odd) {
   height: 25em;
   border: solid black .25em;
   overflow: scroll;
+  background-color: lightyellow;
 }
