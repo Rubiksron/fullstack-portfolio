@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const outputDirectory = 'docs';
+const outputDirectory = 'dist';
 
 module.exports = {
   entry: './src/client/index.js',
@@ -39,7 +39,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: './docs/index.html',
     })
   ]
 };
